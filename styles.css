@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -70,6 +72,11 @@ main {
     border-radius: 8px;
 }
 
+/* Hide mobile logo by default */
+.mobile-logo {
+    display: none;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
     nav ul {
@@ -87,5 +94,14 @@ main {
 
     .feature {
         margin-top: 20px;
+    }
+
+    /* Show mobile logo and hide desktop logo on mobile */
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
     }
 }
