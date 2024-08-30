@@ -28,10 +28,19 @@
             bottom: 0; /* Align to the bottom */
             left: 0; /* Align to the left */
             width: 100%; /* Full width */
-            height: 50%; /* Make the card info take up the bottom half of the card */
+            height: 40%; /* Adjust the height to leave space between the image and info */
             background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
             color: white; /* White text color */
             padding: 10px; /* Padding for spacing */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+        .card-content {
+            position: absolute; /* Position the card content absolutely within the card */
+            top: 50%; /* Start the content below the image */
+            left: 0; /* Align to the left */
+            width: 100%; /* Full width */
+            padding: 10px; /* Padding for spacing */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
         }
     </style>
 </head>
@@ -51,25 +60,28 @@
         <section class="grid">
             <div class="card">
                 <img src="https://raw.githubusercontent.com/fumeko-ts/Ashura_Temps/7265342564ca2b712ce7f892af0100cdf456036a/senko-bedrock.png?raw=true" alt="Image 1">
-                <div class="card-info">
+                <div class="card-content">
                     <h3>Title 1</h3>
                     <p>Avatar | Views | Timestamp</p>
                 </div>
+                <div class="card-info"></div>
             </div>
             <!-- Repeat for more cards -->
             <div class="card">
                 <img src="https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/316/18138369_l.webp" alt="Image 2">
-                <div class="card-info">
+                <div class="card-content">
                     <h3>Title 2</h3>
                     <p>Avatar | Views | Timestamp</p>
                 </div>
+                <div class="card-info"></div>
             </div>
             <div class="card">
                 <img src="https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/316/18138369_l.webp" alt="Image 3">
-                <div class="card-info">
+                <div class="card-content">
                     <h3>Title 3</h3>
                     <p>Avatar | Views | Timestamp</p>
                 </div>
+                <div class="card-info"></div>
             </div>
         </section>
     </main>
