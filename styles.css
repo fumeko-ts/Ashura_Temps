@@ -70,7 +70,7 @@ main {
     border-radius: 8px;
     width: 50%; /* Adjust the width as needed */
     height: auto; /* Adjust the height as needed */
-    max-width: 300px; /* Optional: Set a maximum width */
+    max-width: 50px; /* Optional: Set a maximum width */
     margin: 0 auto; /* Center the box */
 }
 
