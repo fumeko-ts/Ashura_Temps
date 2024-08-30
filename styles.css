@@ -63,17 +63,6 @@ main {
     margin-top: 1rem;
 }
 
-.feature {
-    flex: 1;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    width: 50%; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
-    max-width: 50px; /* Optional: Set a maximum width */
-    margin: 0 auto; /* Center the box */
-}
-
 .mobile-logo {
     display: none;
 }
@@ -90,10 +79,6 @@ main {
 
     .grid {
         grid-template-columns: 1fr;
-    }
-
-    .feature {
-        margin-top: 20px;
     }
 
     .desktop-logo {
