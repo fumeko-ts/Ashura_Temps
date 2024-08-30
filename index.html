@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>dunno?</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/fumeko-ts/Ashura_Temps/411c7cc85cfee11e42581467dfaa2ab63273fab1/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card {
+            width: 512px; /* Set the width to match the image */
+            height: 512px; /* Set the height to match the image */
+            overflow: hidden; /* Hide any overflow */
+            position: relative; /* Position relative for absolute positioning inside */
+        }
+        .card img {
+            width: 100%; /* Make the image take up the full width of the card */
+            height: 100%; /* Make the image take up the full height of the card */
+            object-fit: cover; /* Ensure the image covers the card without distortion */
+        }
+        .card-info {
+            position: absolute; /* Position the card info absolutely within the card */
+            bottom: 0; /* Align to the bottom */
+            left: 0; /* Align to the left */
+            width: 100%; /* Full width */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white; /* White text color */
+            padding: 10px; /* Padding for spacing */
+        }
+    </style>
 </head>
 <body>
     <nav>
