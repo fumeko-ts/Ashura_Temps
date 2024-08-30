@@ -1,91 +1,45 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #00008b, #8a2be2);
-    color: white;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-nav .logo {
-    font-size: 1.5rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    flex: 3;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.card-info {
-    margin-top: 1rem;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-}
-
-.mobile-logo {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .desktop-logo {
-        display: none;
-    }
-
-    .mobile-logo {
-        display: block;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>dunno?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card img {
+            width: 200%;
+            height: 200%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/fumeko-ts/Ashura_Temps/73d3eb62eaddfff74381e7fd842b189056c4aacd/title.rin.png" alt="Logo" class="desktop-logo">
+            <img src="https://raw.githubusercontent.com/fumeko-ts/Ashura_Temps/7e45a2e3f2729c38c0363396cd10c50b038b75ec/minecraft_title-transformed.png" alt="Mobile Logo" class="mobile-logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="grid">
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/fumeko-ts/Ashura_Temps/7265342564ca2b712ce7f892af0100cdf456036a/senko-bedrock.png?raw=true" alt="Image 1">
+                <div class="card-info">
+                    <h3>Title 1</h3>
+                    <p>Avatar | Views | Timestamp</p>
+                    <div class="buttons">
+                        <button>Like</button>
+                        <button>Share</button>
+                        <button>Add to Playlist</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for more cards -->
+        </section>
+    </main>
+</body>
+</html>
