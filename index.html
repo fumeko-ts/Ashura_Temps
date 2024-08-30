@@ -6,10 +6,15 @@
     <title>dunno?</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Add gap between cards */
+            justify-content: center; /* Center the cards */
+        }
         .card {
             width: 256px; /* Scale down the width */
             height: 256px; /* Scale down the height */
-            margin: 10px; /* Add margin for spacing */
             overflow: hidden; /* Hide any overflow */
             position: relative; /* Position relative for absolute positioning inside */
         }
