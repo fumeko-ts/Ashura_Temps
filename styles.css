@@ -68,6 +68,10 @@ main {
     padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    max-width: 300px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the box */
 }
 
 .mobile-logo {
