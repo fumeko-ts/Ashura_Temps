@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>dunno?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://github.com/fumeko-ts/Ashura_Temps/blob/6c392abf0aef27054b497c6bef2932baf8530baf/favicon.ico?raw=true" type="image/x-icon">
+    <meta property="og:title" content="Ashura Temps">
+    <meta property="og:description" content="Welcome!">
+    <meta property="og:image" content="https://github.com/fumeko-ts/Ashura_Temps/blob/460a8bcb04a7260ffad672009510b881f493da25/embed_image.png?raw=true">
+    <meta property="og:url" content="https://fumeko-ts.github.io/Ashura_Temps/">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Add gap between cards */
+            justify-content: center; /* Center the cards */
+        }
+        .card {
+            width: 256px; /* Scale down the width */
+            height: 256px; /* Scale down the height */
+            overflow: hidden; /* Hide any overflow */
+            position: relative; /* Position relative for absolute positioning inside */
+        }
+        .card img {
+            width: 100%; /* Make the image take up the full width of the card */
+            height: 50%; /* Make the image take up the top half of the card */
+            object-fit: cover; /* Ensure the image covers the card without distortion */
+        }
+        .card-info {
+            position: absolute; /* Position the card info absolutely within the card */
+            bottom: 0; /* Align to the bottom */
+            left: 0; /* Align to the left */
+            width: 100%; /* Full width */
+            height: 50%; /* Make the card info take up the bottom half of the card */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white; /* White text color */
+            display: flex; /* Use flexbox for centering */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            text-align: center; /* Center text */
+            padding: 10px; /* Padding for spacing */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/fumeko-ts/Ashura_Temps/73d3eb62eaddfff74381e7fd842b189056c4aacd/title.rin.png" alt="Logo" class="desktop-logo">
+            <img src="https://raw.githubusercontent.com/fumeko-ts/Ashura_Temps/7e45a2e3f2729c38c0363396cd10c50b038b75ec/minecraft_title-transformed.png" alt="Mobile Logo" class="mobile-logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="grid">
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/fumeko-ts/Ashura_Temps/7265342564ca2b712ce7f892af0100cdf456036a/senko-bedrock.png?raw=true" alt="Image 1">
+                <div class="card-info">
+                    <div>
+                        <h3>Title 1</h3>
+                        <p>Avatar | Views | Timestamp</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for more cards -->
+            <div class="card">
+                <img src="https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/316/18138369_l.webp" alt="Image 2">
+                <div class="card-info">
+                    <div>
+                        <h3>Title 2</h3>
+                        <p>Avatar | Views | Timestamp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/316/18138369_l.webp" alt="Image 3">
+                <div class="card-info">
+                    <div>
+                        <h3>Title 3</h3>
+                        <p>Avatar | Views | Timestamp</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
