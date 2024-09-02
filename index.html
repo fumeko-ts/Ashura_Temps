@@ -17,39 +17,79 @@
             src: url('font.ttf') format('truetype');
         }
         body {
-            font-family: 'CustomFont', sans-serif;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00008b, #8a2be2);
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        nav .logo {
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
         }
         .grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px; /* Add gap between cards */
-            justify-content: center; /* Center the cards */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            flex: 3;
         }
         .card {
-            width: 256px; /* Scale down the width */
-            height: 256px; /* Scale down the height */
-            overflow: hidden; /* Hide any overflow */
-            position: relative; /* Position relative for absolute positioning inside */
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
         }
         .card img {
-            width: 100%; /* Make the image take up the full width of the card */
-            height: 100%; /* Adjusted to make the image take up the full height of the top half */
-            object-fit: cover; /* Ensure the image covers without distortion */
+            width: 100%;
+            border-radius: 8px;
         }
         .card-info {
-            position: absolute; /* Position the card info absolutely within the card */
-            bottom: 0; /* Align to the bottom */
-            left: 0; /* Align to the left */
-            width: 100%; /* Full width */
-            height: 50%; /* Make the card info take up the bottom half of the card */
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            color: white; /* White text color */
-            display: flex; /* Use flexbox for centering */
-            align-items: center; /* Center vertically */
-            justify-content: center; /* Center horizontally */
-            text-align: center; /* Center text */
-            padding: 10px; /* Padding for spacing */
-            box-sizing: border-box; /* Include padding in the element's total width and height */
+            margin-top: 1rem;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+        .mobile-logo {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            main {
+                padding: 1rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .desktop-logo {
+                display: none;
+            }
+            .mobile-logo {
+                display: block;
+            }
         }
     </style>
 </head>
